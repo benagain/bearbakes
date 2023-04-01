@@ -15,6 +15,16 @@ h1 {
   font-weight: 400;
   color: #1b1b1b;
   margin: 0 0 24px 0;
+  letter-spacing: var(--spaced-words);
+}
+
+h2 {
+  font-size: calc(18rem / 16);
+  text-transform: uppercase;
+  color: var(--pink-53);
+  margin-bottom: 32px;
+  letter-spacing: var(--spaced-words);
+  font-weight: 400;
 }
 
 ul {
@@ -69,10 +79,6 @@ nav ul li {
   letter-spacing: 0.025em;
 }
 
-.welcome h1 {
-  letter-spacing: var(--spaced-words);
-}
-
 .main-wrapper {
   width: 100%;
   display: flex;
@@ -94,15 +100,6 @@ main {
   flex-direction: column;
 }
 
-.what-we-love h2 {
-  font-size: calc(18rem / 16);
-  text-transform: uppercase;
-  color: var(--pink-53);
-  margin-bottom: 32px;
-  letter-spacing: var(--spaced-words);
-  font-weight: 400;
-}
-
 .what-we-love div {
   align-self: center;
   width: 100%;
@@ -110,7 +107,6 @@ main {
   gap: 1rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 3rem;
 }
 
 .what-we-love div article {
@@ -125,6 +121,23 @@ main {
 
 .what-we-love div article p {
   padding: 0 1rem;
+  line-height: 1.5;
+  color: rgb(94, 94, 94);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.what-we-love div article h3 {
+    position: relative;
+}
+.what-we-love div article h3 .visible-heading {
+    position: absolute;
+    justify-content: center;
+}
+
+.what-we-love div article h3 .positioning-heading {
+    position: relative;
+    visibility: hidden;
 }
 .what-we-love div article h3 {
     position: relative;
@@ -152,11 +165,24 @@ main {
 }
 
 h3 {
+  color: #1b1b1b;
   margin: 1.5rem;
+  letter-spacing: 0.045em;
+  font-size: 22px;
+  font-weight: 400;
 }
 .what-we-love div article img {
   width: 100%;
-  /* -webkit-clip-path: inset(30px 10px 30px 10px); */
-  /* clip-path: circle(75px at 50% 50%) */
+  margin-bottom: 2rem;
+}
+
+.supporting-other-businesses img {
+  width: 100%;
+}
+
+.supporting-other-businesses article {
+  background-color: var(--pink-96);
+  text-align: center;
+  padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
