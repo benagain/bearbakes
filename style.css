@@ -126,6 +126,18 @@ main {
 .what-we-love div article p {
   padding: 0 1rem;
 }
+.what-we-love div article h3 {
+    position: relative;
+}
+.what-we-love div article h3 .visible-heading {
+    position: absolute;
+    justify-content: center;
+}
+
+.what-we-love div article h3 .positioning-heading {
+    position: relative;
+    visibility: hidden;
+}
 
 @media screen and (min-width: 768px) {
   .what-we-love div article {
