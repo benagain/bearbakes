@@ -1,7 +1,7 @@
 :root {
   --pink-96: hsl(0, 56%, 96%);
   --pink-90: hsl(0, 56%, 90%);
-  --pink-3: hsl(0, 63%, 76%);;
+  --pink-3: hsl(0, 63%, 76%);
   --button-light: hsl(0, 60%, 84%);
   --pink-53: hsl(0, 36%, 53%);
 
@@ -49,7 +49,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 2rem);
+  height: calc(100% - 2.2rem);
   max-width: 100%;
 }
 
@@ -224,4 +224,45 @@ main {
   transition-timing-function: ease;
   cursor: pointer;
   background-color: var(--button-light);
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 80px;
+}
+
+.arrows path {
+  stroke: var(--pink-3);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 14s infinite;
+  /* animation-duration: 14s;
+  animation-iteration-count: infinite; */
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes arrow {
+    0% { opacity: 0; }
+    14% { opacity: 0; } /* 2s */
+    18% { opacity: 1; } /* 2.5s */
+    22% { opacity: 0; } /* 3s */
+    100% { opacity: 0; }
+  }
+
+  .arrows path.a1 {
+    animation-delay: 0s;
+  }
+
+  .arrows path.a2 {
+    animation-delay: 0.2s;
+  }
+
+  .arrows path.a3 {
+    animation-delay: 0.4s;
+  }
 }
